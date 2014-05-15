@@ -1,0 +1,322 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sesion6" >
+
+    <Button
+        android:id="@+id/ant"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/arrowprevicon"
+        android:onClick="anterior" />
+
+    <Button
+        android:id="@+id/sig"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_alignBaseline="@+id/ant"
+        android:layout_alignBottom="@+id/ant"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/arrownexticon"
+        android:onClick="siguiente" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="70sp"
+        android:paddingRight="70sp" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1.1.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60sp"
+                    android:background="@drawable/border_titulo"
+                    android:gravity="center"
+                    android:text="@string/title6"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="180sp"
+                    android:src="@drawable/imagen1" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="140sp"
+                    android:gravity="center"
+                    android:text="En este nivel hablaremos de la comunicación y de cómo desarrollarla para convertirla en una habilidad social"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60sp"
+                    android:gravity="left"
+                    android:text="A)Conducta socialmente habilidosa\n\nB) Componentes verbales\n\nC) Componentes no verbales\n\nD)Elementos de la comunicación\n\nE)Comunicación con la familia\n\nF)Juego de rol en la comunicación familiar"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100sp"
+                    android:background="@drawable/border_titulo"
+                    android:gravity="center"
+                    android:text="Conducta socialmente habilidosa"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60sp"
+                    android:gravity="center"
+                    android:text="Conjunto de comportamientos\n emitidos por una persona que expresan sentimientos, actitudes, deseos, opiniones o derechos de un modo adecuado en diversas situaciones con la capacidad de resolver problemas de la vida diaria"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100sp"
+                    android:background="@drawable/border_titulo"
+                    android:gravity="center"
+                    android:text="Componentes verbales"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="120sp"
+                    android:gravity="center"
+                    android:text="¿Para cuando se quiere?"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20sp"
+                    android:gravity="center"
+                    android:text="¿A quien se le pide?"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20sp"
+                    android:gravity="center"
+                    android:text="¿Qué se quiere?"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50sp"
+                    android:gravity="center"
+                    android:text="¿Respuestas posibles:\nSi, no, negociar?"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100sp"
+                    android:background="@drawable/border_titulo"
+                    android:gravity="center"
+                    android:text="Componentes verbales"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="120sp"
+                    android:gravity="center"
+                    android:text="La mirada"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20sp"
+                    android:gravity="center"
+                    android:text="La expresión facial"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20sp"
+                    android:gravity="center"
+                    android:text="La sonrisa"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20sp"
+                    android:gravity="center"
+                    android:text="Los gestos?"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100sp"
+                    android:background="@drawable/border_titulo"
+                    android:gravity="center"
+                    android:text="Comunicación con la familia"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="120sp"
+                    android:gravity="center"
+                    android:text="Genera un papel protector en situaciones de riesgo sexual, por lo que tener una adecuada comunicación ayuda a fortalecer los lazos de protección"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100sp"
+                    android:background="@drawable/border_titulo"
+                    android:gravity="center"
+                    android:text="Aprendiendo a ser asertivo"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="120sp"
+                    android:gravity="center"
+                    android:text="Conjunto de comportamientos emitidos por una persona que expresan sentimientos, actitudes, deseos, opiniones o derechos de un modo adecuado en diversas situaciones con la capacidad de resolver problemas de la vida diaria"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/final4"
+                android:textSize="23sp" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+</RelativeLayout>

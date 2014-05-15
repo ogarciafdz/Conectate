@@ -1,0 +1,407 @@
+<?xml version="1.0"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sesion8" >
+
+    <Button
+        android:id="@+id/btn_anterior"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/arrowprevicon"
+        android:onClick="anterior" />
+
+    <Button
+        android:id="@+id/btn_siguiente"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignBaseline="@+id/btn_anterior"
+        android:layout_alignBottom="@+id/btn_anterior"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/arrownexticon"
+        android:onClick="siguiente" />
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp" >
+
+        <ScrollView
+            android:id="@+id/scrollView8.1.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView8.1.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/border_titulo"
+                    android:gravity="center"
+                    android:text="Nivel 8\nResiliencia"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <ImageView
+                    android:id="@+id/imageView3.4.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/image8_1_1" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView8.2.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView8.2.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="En este nivel aprenderás que es resilencia, cuales son los pilares de la resilencia y las verbalizaciones resilientes, además que es el afrontamiento positivo, los estilos y las diferentes estrategias de afrontamiento."
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/btn_8.2.1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/buttonbg"
+                    android:text="Resi… que?" />
+
+                <Button
+                    android:id="@+id/btn_8.2.2"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonbg"
+                    android:text="Afrontamiento positivo?" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView8.3.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ViewFlipper
+                    android:id="@+id/viewFlipper8.3.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" >
+
+                    <TextView
+                        android:id="@+id/textView8.3.1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:text="Resilencia: Es la capacidad de sobreponerse, recuperarse y adaptarse con éxito a la adversidad y de desarrollar la competencia social a pesar de estar en estrés o en situaciones problemáticas"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textView8.3.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:text="Pilares de la resilencia:\nSentido del humor\nConfianza \nIniciativa \nValores \nIndependencia\nIdentidad \nCreatividad\nEspiritualidad "
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textView8.3.3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center"
+                        android:text="Verbalizaciones resilientes:\nYo soy\nYo tengo \nYo estoy \nYo siento \nYo puedo \nYo quiero"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </ViewFlipper>
+
+                <Button
+                    android:id="@+id/btn_8.3.1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/buttonbg"
+                    android:text="Resilencia" />
+
+                <Button
+                    android:id="@+id/btn_8.3.2"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/buttonbg"
+                    android:text="Pilares de la resilencia" />
+
+                <Button
+                    android:id="@+id/btn_8.3.3"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/buttonbg"
+                    android:text="Verbalizaciones resilientes" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView8.4.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ViewFlipper
+                    android:id="@+id/viewFlipper8.4.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView8.4.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="60dp"
+                            android:gravity="center"
+                            android:text="Afrontamiento: Es aquel comportamiento que implica esfuerzo en una persona para resolver las situaciones problemáticas, en un intento personal de adaptarse al entorno\n\nEstilos de afrontamiento: \nConfrontatitvo\nOptimista \nPaliativo \nApoyo \nSeguro de si mismo"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btn_8.4.1"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="60dp"
+                            android:background="@drawable/buttonbg"
+                            android:text="Búsqueda de alternativas " />
+
+                        <Button
+                            android:id="@+id/btn_8.4.2"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/buttonbg"
+                            android:text="Visualización positiva" />
+
+                        <Button
+                            android:id="@+id/btn_8.4.3"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/buttonbg"
+                            android:text="Escritura emocional " />
+                    </LinearLayout>
+                </ViewFlipper>
+
+                <Button
+                    android:id="@+id/btn_8.4.4"
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/buttonbg"
+                    android:text="Afrontamiento y estilos de afrontamiento" />
+
+                <Button
+                    android:id="@+id/btn_8.4.5"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/buttonbg"
+                    android:text="Estrategias de afrontamiento " />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView8.5.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView8.5.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="Busqueda de alternativas:\n\n 1. Identificar el problema\n2. Buscar soluciones\n3. Anticipar consecuencias\n4. Elegir una solución\n5. Poner en práctica la solución\n6. Evaluar si es correcta la solución"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/btn_8.5.1"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/buttonbg"
+                    android:onClick="setEA"
+                    android:text="Estrategias de afrontamiento" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView8.6.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView8.6.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="Otra estrategia es la de &quot;Visualización positiva&quot;, la empleamos en la sesión 4 con la dinámica &quot;Imaginemos&quot; donde imaginamos una vida futura con y sin VIH/SIDA"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView8.6.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="Visualizacón positiva\n\n1. Ejercicio de relajacón-respiración\n2. Imaginar el comportamiento deseado (resolviendo satisfactoriamente el problema, actuando correctamente y con seriedad)\n3. Repetir esta imagen una y otra vez\n4. Creer que se está haciendo bien\n5. Proponerse objetivos alcanzables y que dependa de uno/a mismo/a"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/btn_8.6.1"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/buttonbg"
+                    android:onClick="setEA"
+                    android:text="Estrategias de afrontamiento" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView8.7.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView8.7.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="La tercera estrategia de la &quot;Escritura emocional&quot; consiste en escribir sobre las vivencias que tenemos sobre situaciones ed riesgo sexual y de las relaciones personales e impersonales que forman parte de nuestra vida cotidiana, nos permite adquirir mayor consciencia de qué emociones tenemos, porqué, cómo nos afecta y qué podriamos hacer para cambiarlas o prevenirlas"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView8.7.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="Escritura emocional\n\n 1. Centrarse en emociones y sentimientos personales\n2. Ser sincero contigo mismo/a\n3. Analizar la situación que causa el conflicto\n4. Terminar el escrito con algo positivo y reflexivo\n5. Releer y reflexionar sobre lo escrito (errores que no se volverán a cometer, estrategias de afrontamiento para el futuro)"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/btn_8.7.1"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/buttonbg"
+                    android:onClick="setEA"
+                    android:text="Estrategias de afrontamiento" />
+            </LinearLayout>
+        </ScrollView>
+        <ScrollView
+            android:id="@+id/scrollView7.10.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView7.10.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="¡Felicidades has terminado la actividad!"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+        </ScrollView>
+    </ViewFlipper>
+
+</RelativeLayout>

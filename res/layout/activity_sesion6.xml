@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sesion6" >
+
+    <Button
+        android:id="@+id/sig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:onClick="siguiente"
+        android:text=">" />
+
+    <Button
+        android:id="@+id/ant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sig"
+        android:layout_alignBottom="@+id/sig"
+        android:layout_alignParentLeft="true"
+        android:onClick="anterior"
+        android:text="&lt;" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/title6"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:src="@drawable/imagen1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/comutitle" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background"
+                android:gravity="center"
+                android:text="@string/comutext" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="21dp"
+                android:background="@drawable/background"
+                android:gravity="center"
+                android:text="@string/condutext" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="101dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/conductitle" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="101dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/compvertitle" />
+            <!-- <TextView -->
+
+
+            <!-- android:id="@+id/textView2" -->
+
+
+            <!-- android:layout_width="275dp" -->
+
+
+            <!-- android:layout_height="wrap_content" -->
+
+
+            <!-- android:layout_alignParentTop="true" -->
+
+
+            <!-- android:layout_centerHorizontal="true" -->
+
+
+            <!-- android:layout_marginTop="82dp" -->
+
+
+            <!-- android:background="@drawable/background" -->
+
+
+            <!-- android:gravity="center" -->
+
+
+            <!-- android:text="@string/compvertitle" /> -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="101dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/compnovertitle" />
+            <!-- <TextView -->
+
+
+            <!-- android:id="@+id/textView2" -->
+
+
+            <!-- android:layout_width="275dp" -->
+
+
+            <!-- android:layout_height="wrap_content" -->
+
+
+            <!-- android:layout_alignParentTop="true" -->
+
+
+            <!-- android:layout_centerHorizontal="true" -->
+
+
+            <!-- android:layout_marginTop="82dp" -->
+
+
+            <!-- android:background="@drawable/background" -->
+
+
+            <!-- android:gravity="center" -->
+
+
+            <!-- android:text="@string/compvertitle" /> -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="101dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/comfatilte" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="37dp"
+                android:background="@drawable/background"
+                android:gravity="center"
+                android:text="@string/comfatext" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+</RelativeLayout>

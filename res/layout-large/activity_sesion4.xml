@@ -1,0 +1,319 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sesion4" >
+
+    <Button
+        android:id="@+id/btn_anterior"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/arrowprevicon"
+        android:onClick="anterior" />
+
+    <Button
+        android:id="@+id/btn_siguiente"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_alignBaseline="@+id/btn_anterior"
+        android:layout_alignBottom="@+id/btn_anterior"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/arrownexticon"
+        android:onClick="siguiente" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="70sp"
+        android:paddingRight="70sp" >
+
+        <ScrollView
+            android:id="@+id/scrollView1.1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1.1.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60sp"
+                    android:background="@drawable/border_titulo"
+                    android:gravity="center"
+                    android:text="@string/title4"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView1.1.1"
+                    android:layout_width="400sp"
+                    android:layout_height="400sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60sp"
+                    android:src="@drawable/imagen1" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ViewFlipper
+                    android:id="@+id/viewFlipper2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="180sp"
+                        android:gravity="center"
+                        android:text="@string/index"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="180sp"
+                        android:gravity="center"
+                        android:text="@string/empa"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="180sp"
+                        android:gravity="center"
+                        android:text="@string/afec"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="180sp"
+                        android:gravity="center"
+                        android:text="@string/auto"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="180sp"
+                        android:gravity="center"
+                        android:text="@string/autorea"
+                        android:textSize="22sp" />
+                </ViewFlipper>
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="200sp"
+                    android:layout_height="65sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="90sp"
+                    android:background="@drawable/buttonbg"
+                    android:text="Autorrealizacion"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="200sp"
+                    android:layout_height="65sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15sp"
+                    android:background="@drawable/buttonbg"
+                    android:text="Afectividad"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="200sp"
+                    android:layout_height="65sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15sp"
+                    android:background="@drawable/buttonbg"
+                    android:text="Empatia"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="200sp"
+                    android:layout_height="65sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15sp"
+                    android:background="@drawable/buttonbg"
+                    android:text="Autoestima"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- <ScrollView -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="match_parent" > -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:orientation="vertical" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_gravity="center_horizontal" -->
+        <!-- android:layout_marginTop="60sp" -->
+        <!-- android:background="@drawable/border_titulo" -->
+        <!-- android:gravity="center" -->
+        <!-- android:text="Imaginemos" -->
+        <!-- android:textSize="25sp" -->
+        <!-- android:textStyle="bold" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginTop="180sp" -->
+        <!-- android:gravity="center" -->
+        <!-- android:text="@string/imagina" -->
+        <!-- android:textSize="22sp" /> -->
+
+
+        <!-- <Button -->
+        <!-- android:layout_width="200sp" -->
+        <!-- android:layout_height="65sp" -->
+        <!-- android:layout_gravity="center" -->
+        <!-- android:layout_marginTop="40sp" -->
+        <!-- android:background="@drawable/buttonbg" -->
+        <!-- android:text="Iniciar audio" -->
+        <!-- android:textColor="@android:color/white" /> -->
+        <!-- </LinearLayout> -->
+        <!-- </ScrollView> -->
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60sp"
+                    android:background="@drawable/border_titulo"
+                    android:gravity="center"
+                    android:text="Mi proyecto"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="120sp"
+                    android:gravity="center"
+                    android:text="Para comenzar un proyecto personal es importante:\n\n\na. Plantearse una meta clara\n\nb. Establecer las tareas que se deben realizar para lograrla\n\nc. Organizar las tareas en el orden en que se deberían realizar.\n\nd. Ponerlas en marcha y evaluar los logros que se vayan consiguiendo."
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView1.1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60sp"
+                    android:gravity="center"
+                    android:text="@string/paso1"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:gravity="center"
+                    android:text="@string/paso2"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:gravity="center"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:gravity="center"
+                    android:text="@string/paso4"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView1.1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginTop="60sp"
+                    android:gravity="left"
+                    android:text="Meta:Supera la timidez para mejorar la autoestima\n\nTareas para conseguirlo(piensa en todas las tareas que consideras significativas, noimporta el orden)\n\n\n-Saludar a gente que conozcas\n\n-Unirse a grupos de compañeros y amigos en recreo\n\n-Iniciar conversaciones con familiares\n\n-Hacer preguntas al profesor durante las clases\n\n-Iniciar conversaciones con compañeros\n\n-Iniciar conversaciones con personas conocidas\n\nOrganización de las tareas(empezar por lo más fácil y avanzar hacia las tareas más dificiles)\n\n\n-Saludar a gnete que conozcas\n -Iniciar conversaciones con familiares\n\n-Iniciar conversaciones con personas conocidas\n\n-Iniciar conversaciones con compañeros\n\n-Unirse a grupos de compañeros y amigos en recreo\n\n-Hacer preguntas al profesor durante clase "
+                    android:textSize="23sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/final4"
+                android:textSize="23sp" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+</RelativeLayout>

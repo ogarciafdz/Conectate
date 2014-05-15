@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fime.cidics.accesida"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="fime.cidics.accesida.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fime.cidics.accesida.Sesion1"
+            android:label="@string/title_activity_sesion1"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fime.cidics.accesida.Sesion3"
+            android:label="@string/title_activity_sesion3"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fime.cidics.accesida.Sesion5"
+            android:label="@string/title_activity_sesion5"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fime.cidics.accesida.Sesion2"
+            android:label="@string/title_activity_sesion2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fime.cidics.accesida.Sesion4"
+            android:label="@string/title_activity_sesion4"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fime.cidics.accesida.Sesion6"
+            android:label="@string/title_activity_sesion6"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fime.cidics.accesida.Sesion7"
+            android:label="@string/title_activity_sesion7"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fime.cidics.accesida.Sesion8"
+            android:label="@string/title_activity_sesion8"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fime.cidics.accesida.QuizActivity1"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="fime.cidics.accesida.MainGame"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fime.cidics.accesida.Facil"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fime.cidics.accesida.Inter"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fime.cidics.accesida.Dificil"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+</manifest>

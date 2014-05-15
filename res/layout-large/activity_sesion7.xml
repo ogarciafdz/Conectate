@@ -1,0 +1,455 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sesion7" >
+
+    <Button
+        android:id="@+id/btn_anterior"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/arrowprevicon"
+        android:onClick="anterior" />
+
+    <Button
+        android:id="@+id/btn_siguiente"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_alignBaseline="@+id/btn_anterior"
+        android:layout_alignBottom="@+id/btn_anterior"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/arrownexticon"
+        android:onClick="siguiente" />
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="70sp"
+        android:paddingRight="70sp" >
+
+        <ScrollView
+            android:id="@+id/scrollView7.1.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView7.1.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/border_titulo"
+                    android:gravity="center"
+                    android:text="Nivel 7\nDiscutiendo sobre valores"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView7.1.1"
+                    android:layout_width="300sp"
+                    android:layout_height="300sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="120dp"
+                    android:src="@drawable/imagen7_1" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView7.2.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView7.2.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="120dp"
+                    android:gravity="center_vertical"
+                    android:text="En la siguiente actividad vamos a conocer los principales valores que nos permiten llevar una conducta sexual segura."
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/imageView7.1.1"
+                    android:layout_width="300sp"
+                    android:layout_height="300sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="120dp"
+                    android:src="@drawable/imagen7_2" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView7.2.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView7.2.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="180dp"
+                    android:gravity="center_vertical"
+                    android:text="Los valores guían el comportamiento de las personas, en cómo piensan y se expresan. Son necesarios para ser justos y honestos, pueden ser aplicados en la familia, en la escuela y en toda relación social."
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView7.3.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/button7.3.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="65sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="150sp"
+                    android:background="@drawable/buttonbg"
+                    android:text="Libertad, Independencia y Autonomía"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/button7.3.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="65sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/buttonbg"
+                    android:text="Igualdad"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/button7.3.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="65sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/buttonbg"
+                    android:text="Solidaridad"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/button7.3.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="65sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/buttonbg"
+                    android:text="Respeto"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/button7.3.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="65sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/buttonbg"
+                    android:text="Diálogo"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/button7.3.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="65sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/buttonbg"
+                    android:text="Colaboración"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView7.4.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView7.4.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="Libertad: Independencia y autonomía.\n\nIndependencia: ser libre, poder expresarse sin que nadie interfiera.\n\nAutonomía: Tomar decisiones propias, pero no hacerlos sin los otros.\n\nEjemplo: En la relación de pareja, al decidir si se desea tener sexo o no, sin ejercer presión."
+                    android:textSize="22sp" />
+
+                <Button
+                    android:layout_width="200sp"
+                    android:layout_height="60sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttonbg"
+                    android:onClick="valores"
+                    android:text="Valores"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView7.5.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView7.5.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="Igualdad\n\nAusencia de discriminación entre las personas.\n\nEjemplo: En la relación de pareja ambos tienen los mismos derechos.\nTodos tienen derecho a la información de cómo prevenir ITS."
+                    android:textSize="22sp" />
+
+                <Button
+                    android:layout_width="200sp"
+                    android:layout_height="60sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttonbg"
+                    android:onClick="valores"
+                    android:text="Valores"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView7.6.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView7.6.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="Solidaridad\n\nApoyar a otra persona en momentos de vulnerabilidad.\nEjemplo: personas que padecen Sida."
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/imageView7.6.1"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/imagen7_6" />
+
+                <Button
+                    android:layout_width="200sp"
+                    android:layout_height="60sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttonbg"
+                    android:onClick="valores"
+                    android:text="Valores"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView7.7.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView7.7.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="Respeto\n\nReconocimiento de que otra persona tiene un valor por si misma.Ejemplo: respeto a la pareja, a uno mismo."
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/imageView7.7.1"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/imagen7_6" />
+
+                <Button
+                    android:layout_width="200sp"
+                    android:layout_height="60sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttonbg"
+                    android:onClick="valores"
+                    android:text="Valores"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView7.8.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView7.8.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="Diálogo\n\nComunicación efectiva entre dos personas para negociar algo.\nEjemplo: Negociación con la pareja para el uso de condon."
+                    android:textSize="22sp" />
+
+                <Button
+                    android:layout_width="200sp"
+                    android:layout_height="60sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttonbg"
+                    android:onClick="valores"
+                    android:text="Valores"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView7.9.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView7.9.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="colaboración\n\nAyudar y servir a los demás.\nEjemplo: Colaborar con padres, amigos y pareja."
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/imageView7.9.1"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/imagen7_6" />
+
+                <Button
+                    android:layout_width="200sp"
+                    android:layout_height="60sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttonbg"
+                    android:onClick="valores"
+                    android:text="Valores"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView7.10.1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView7.10.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="! Ya conoces los valores ! \n Ahora veremos como influyen para que tengamos una conducta sexual segura."
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/imageView7.10.1"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/imagen7_10" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/final4"
+                android:textSize="23sp" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+</RelativeLayout>
